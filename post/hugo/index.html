@@ -3,7 +3,7 @@
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-  <meta property="og:title" content=" Hugo安装使用 &middot;  冰羽的空间" />
+  <meta property="og:title" content=" Hugo安装使用发布到Github &middot;  冰羽的空间" />
   
   <meta name="theme-color" content="#hexcolor" />
  
@@ -20,7 +20,7 @@
   
 
   <title>
-     Hugo安装使用 &middot;  冰羽的空间
+     Hugo安装使用发布到Github &middot;  冰羽的空间
   </title>
 
   <link rel="stylesheet" href="https://bingyupj.github.io/css/bootstrap.min.css" />
@@ -118,7 +118,7 @@
 
 <article>
   <header>
-    <h1 class="text-primary">Hugo安装使用</h1>
+    <h1 class="text-primary">Hugo安装使用发布到Github</h1>
     <div class="post-meta clearfix">
     
       <div class="post-date pull-left">
@@ -134,9 +134,98 @@
     </div>
   </header>
   <section>
-    <p>Hello Hugo ！</p>
+    <p>一：下载</p>
 
-<p><a href="https://pages.github.com/">https://pages.github.com/</a></p>
+<pre><code>官网 http://gohugo.io/getting-started/installing/
+
+1）windows 环境
+
+直接从 https://github.com/gohugoio/hugo/releases 上下载相应的安装包。
+
+下好后，是个hugo.exe文件，把该目录直接丢到环境变量里面去，方便操作。
+
+2） mac 环境
+
+brew install hugo
+
+
+查看版本 ：hugo version
+</code></pre>
+
+<p>二 生成站点</p>
+
+<pre><code>hugo new site blog
+
+创建的站点文件目录说明：
+
+|- archetypes ：存放default.md，头文件格式
+
+|- content ：content目录存放博客文章（.markdown/.md文件）
+
+|- data ：存放自定义模版，导入的toml文件（或json，yaml）
+
+|- layouts ：layouts目录存放的是网站的模板文件
+
+|- static ：static目录存放js/css/img等静态资源
+
+|- config.toml ：config.toml是网站的配置文件
+
+当前网站是没有任何内容的，需要下载个主题跑起来才有内容。
+</code></pre>
+
+<p>三 下载主题</p>
+
+<pre><code>Hugo官方主题：https://themes.gohugo.io/
+
+Hugo官方主题GitHub：https://github.com/spf13/hugoThemes/
+
+从官网上选好了一个主题： https://themes.gohugo.io/vienna/, 根据指引进行安装，cd到 themes 目录下：
+
+git clone https://github.com/keichi/vienna 配置好 config.toml 内容。
+
+该主题主要包含以下内容：
+
+|- archetypes ：存放default.md，头文件格式
+
+|- layouts ：主题模板文件
+
+|- static ：静态资源
+
+|- theme.toml ：主题配置文件
+</code></pre>
+
+<p>四 启动</p>
+
+<pre><code>hugo server -t vienna 
+
+( hugo server -t vienna -w -D )
+</code></pre>
+
+<p>五 发表文章</p>
+
+<pre><code>hugo new post/test.md
+
+可以用文本文件或markdown编辑器打开文件 post/test.md ，并修改相应内容。
+
+注意：默认创建的是草稿类型，需要将draft值改为false才能看到页面。
+</code></pre>
+
+<p>六 生成静态站点</p>
+
+<pre><code>在blog目录下执行：
+
+hugo -t=vienna --baseUrl=&quot;https://bingyupj.github.io/&quot;
+
+所有静态页面都会生成到 public 目录下，生成静态网站后并push到你的GitHub Pages上，就能得到一个在线的个人网站了。
+
+[我的Github Page](bingyupj.github.io/)： 
+
+
+番外：怎么创建 github page? 不需要了。
+官网已经写的很清晰了，[点击查看](https://pages.github.com/)
+</code></pre>
+
+<p>Enjoy Hugo ！</p>
 
   </section>
   <footer>

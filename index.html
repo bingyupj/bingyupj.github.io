@@ -117,7 +117,7 @@
   
   <article>
   <header>
-    <h2><a href="https://bingyupj.github.io/post/hugo/">Hugo安装使用</a></h2>
+    <h2><a href="https://bingyupj.github.io/post/hugo/">Hugo安装使用发布到Github</a></h2>
     <div class="post-meta clearfix">
       <div class="post-date pull-left">
         Posted on
@@ -128,9 +128,17 @@
     </div>
   </header>
   <div>
-    Hello Hugo ！
-https://pages.github.com/
+    一：下载
+官网 http://gohugo.io/getting-started/installing/ 1）windows 环境 直接从 https://github.com/gohugoio/hugo/releases 上下载相应的安装包。 下好后，是个hugo.exe文件，把该目录直接丢到环境变量里面去，方便操作。 2） mac 环境 brew install hugo 查看版本 ：hugo version  二 生成站点
+hugo new site blog 创建的站点文件目录说明： |- archetypes ：存放default.md，头文件格式 |- content ：content目录存放博客文章（.markdown/.md文件） |- data ：存放自定义模版，导入的toml文件（或json，yaml） |- layouts ：layouts目录存放的是网站的模板文件 |- static ：static目录存放js/css/img等静态资源 |- config.toml ：config.toml是网站的配置文件 当前网站是没有任何内容的，需要下载个主题跑起来才有内容。  三 下载主题
+Hugo官方主题：https://themes.gohugo.io/ Hugo官方主题GitHub：https://github.com/spf13/hugoThemes/ 从官网上选好了一个主题： https://themes.gohugo.io/vienna/, 根据指引进行安装，cd到 themes 目录下： git clone https://github.com/keichi/vienna 配置好 config.toml 内容。 该主题主要包含以下内容： |- archetypes ：存放default.md，头文件格式 |- layouts ：主题模板文件 |- static ：静态资源 |- theme.
   </div>
+  
+  <footer>
+    <ul class="pager">
+      <li class="next"><a href="https://bingyupj.github.io/post/hugo/">Read more <span aria-hidden="true">&raquo;</span></a></li>
+    </ul>
+  </footer>
   
 </article>
 
