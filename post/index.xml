@@ -6,22 +6,39 @@
     <description>Recent content in Posts on 冰羽的空间</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; Copyright by bingyu</copyright>
-    <lastBuildDate>Fri, 23 Feb 2018 17:24:51 +0800</lastBuildDate>
+    <copyright>&amp;copy; Copyright 2018 by bingyu </copyright>
+    <lastBuildDate>Sat, 24 Feb 2018 09:56:06 +0800</lastBuildDate>
     
 	<atom:link href="https://bingyupj.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hugo安装使用发布到Github</title>
+      <title>我的Awesome</title>
+      <link>https://bingyupj.github.io/post/awesome/</link>
+      <pubDate>Sat, 24 Feb 2018 09:56:06 +0800</pubDate>
+      
+      <guid>https://bingyupj.github.io/post/awesome/</guid>
+      <description>我的Awesome
+搜集一下有趣的网站。放在GitHub上。</description>
+    </item>
+    
+    <item>
+      <title>Hugo安装并发布到Github</title>
       <link>https://bingyupj.github.io/post/hugo/</link>
       <pubDate>Fri, 23 Feb 2018 17:24:51 +0800</pubDate>
       
       <guid>https://bingyupj.github.io/post/hugo/</guid>
-      <description>一：下载
-官网 http://gohugo.io/getting-started/installing/ 1）windows 环境 直接从 https://github.com/gohugoio/hugo/releases 上下载相应的安装包。 下好后，是个hugo.exe文件，把该目录直接丢到环境变量里面去，方便操作。 2） mac 环境 brew install hugo 查看版本 ：hugo version  二 生成站点
+      <description>Hugo 是什么？
+The world’s fastest framework for building websites.
+官方说是世界上最快的建立静态网站的工具。
+相类似的还有hexo,是node js 写的，hugo 是用 go 写的。
+以前玩过hexo,现在还是用下hugo吧。
+一：下载
+官网下载地址
+1）windows 环境 直接从 [releases地址](https://github.com/gohugoio/hugo/releases) 上下载相应的安装包。 下好后，是个hugo.exe文件，把该目录直接丢到环境变量里面去，方便操作。 2） mac 环境 用 brew install hugo 或者同样的从上面地址下载即可。 查看版本 ：hugo version  二 生成站点
 hugo new site blog 创建的站点文件目录说明： |- archetypes ：存放default.md，头文件格式 |- content ：content目录存放博客文章（.markdown/.md文件） |- data ：存放自定义模版，导入的toml文件（或json，yaml） |- layouts ：layouts目录存放的是网站的模板文件 |- static ：static目录存放js/css/img等静态资源 |- config.toml ：config.toml是网站的配置文件 当前网站是没有任何内容的，需要下载个主题跑起来才有内容。  三 下载主题
-Hugo官方主题：https://themes.gohugo.io/ Hugo官方主题GitHub：https://github.com/spf13/hugoThemes/ 从官网上选好了一个主题： https://themes.gohugo.io/vienna/, 根据指引进行安装，cd到 themes 目录下： git clone https://github.com/keichi/vienna 配置好 config.toml 内容。 该主题主要包含以下内容： |- archetypes ：存放default.md，头文件格式 |- layouts ：主题模板文件 |- static ：静态资源 |- theme.</description>
+Hugo官方主题 、Hugo官方主题GitHub
+从官网上选好了一个主题如：https://themes.gohugo.io/vienna/, 根据指引进行安装，cd到 themes 目录下： git clone https://github.</description>
     </item>
     
   </channel>

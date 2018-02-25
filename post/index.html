@@ -33,7 +33,7 @@
       <h1><a href="https://bingyupj.github.io/">冰羽的空间</a></h1>
       
       <div class="tag-line">
-        Short subtitle/tagline of your blog
+        能找到这里，我们肯定是朋友……
       </div>
       
       <div class="sns-links hidden-print">
@@ -43,59 +43,19 @@
   </a>
   
   
-  <a href="https://twitter.com/Your%20Twitter%20username" target="_blank">
-    <i class="fa fa-twitter"></i>
-  </a>
   
   
-  <a href="https://instagram.com/Your%20Instagram%20username" target="_blank">
-    <i class="fa fa-instagram"></i>
-  </a>
   
   
-  <a href="https://plus.google.com/+Your%20Google&#43;%20user%20id" target="_blank">
-    <i class="fa fa-google"></i>
-  </a>
-  
-  
-  <a href="https://facebook.com/Your%20Facebook%20username" target="_blank">
-    <i class="fa fa-facebook"></i>
-  </a>
-  
-  
-  <a href="https://github.com/Your%20GitHub%20username" target="_blank">
+  <a href="https://github.com/bingyupj" target="_blank">
     <i class="fa fa-github"></i>
   </a>
   
   
-  <a href="https://gitlab.com/Your%20GitLab%20username" target="_blank">
-    <i class="fa fa-gitlab"></i>
-  </a>
   
   
-  <a href="https://reddit.com/user/Your%20Reddit%20username" target="_blank">
-    <i class="fa fa-reddit-alien"></i>
-  </a>
   
   
-  <a href="https://news.ycombinator.com/user?id=Your%20Hacker%20News%20username" target="_blank">
-    <i class="fa fa-hacker-news"></i>
-  </a>
-  
-  
-  <a href="https://stackoverflow.com/users/Your%20Stackoverflow%20user%20id%20%28number%29" target="_blank">
-    <i class="fa fa-stack-overflow"></i>
-  </a>
-  
-  
-  <a href="https://linkedin.com/in/Your%20LinkedIn%20username" target="_blank">
-    <i class="fa fa-linkedin"></i>
-  </a>
-  
-  
-  <a href="https://keybase.io/Your%20keybase.io%20username" target="_blank">
-    <i class="fa fa-key"></i>
-  </a>
   
 </div>
 
@@ -121,7 +81,28 @@
   <hr/>
   <article>
   <header>
-    <h2><a href="https://bingyupj.github.io/post/hugo/">Hugo安装使用发布到Github</a></h2>
+    <h2><a href="https://bingyupj.github.io/post/awesome/">我的Awesome</a></h2>
+    <div class="post-meta clearfix">
+      <div class="post-date pull-left">
+        Posted on
+        <time datetime="2018-02-24T09:56:06&#43;08:00">
+          Feb 24, 2018
+        </time>
+      </div>
+    </div>
+  </header>
+  <div>
+    我的Awesome
+搜集一下有趣的网站。放在GitHub上。
+  </div>
+  
+</article>
+
+  
+  <hr/>
+  <article>
+  <header>
+    <h2><a href="https://bingyupj.github.io/post/hugo/">Hugo安装并发布到Github</a></h2>
     <div class="post-meta clearfix">
       <div class="post-date pull-left">
         Posted on
@@ -132,10 +113,17 @@
     </div>
   </header>
   <div>
-    一：下载
-官网 http://gohugo.io/getting-started/installing/ 1）windows 环境 直接从 https://github.com/gohugoio/hugo/releases 上下载相应的安装包。 下好后，是个hugo.exe文件，把该目录直接丢到环境变量里面去，方便操作。 2） mac 环境 brew install hugo 查看版本 ：hugo version  二 生成站点
+    Hugo 是什么？
+The world’s fastest framework for building websites.
+官方说是世界上最快的建立静态网站的工具。
+相类似的还有hexo,是node js 写的，hugo 是用 go 写的。
+以前玩过hexo,现在还是用下hugo吧。
+一：下载
+官网下载地址
+1）windows 环境 直接从 [releases地址](https://github.com/gohugoio/hugo/releases) 上下载相应的安装包。 下好后，是个hugo.exe文件，把该目录直接丢到环境变量里面去，方便操作。 2） mac 环境 用 brew install hugo 或者同样的从上面地址下载即可。 查看版本 ：hugo version  二 生成站点
 hugo new site blog 创建的站点文件目录说明： |- archetypes ：存放default.md，头文件格式 |- content ：content目录存放博客文章（.markdown/.md文件） |- data ：存放自定义模版，导入的toml文件（或json，yaml） |- layouts ：layouts目录存放的是网站的模板文件 |- static ：static目录存放js/css/img等静态资源 |- config.toml ：config.toml是网站的配置文件 当前网站是没有任何内容的，需要下载个主题跑起来才有内容。  三 下载主题
-Hugo官方主题：https://themes.gohugo.io/ Hugo官方主题GitHub：https://github.com/spf13/hugoThemes/ 从官网上选好了一个主题： https://themes.gohugo.io/vienna/, 根据指引进行安装，cd到 themes 目录下： git clone https://github.com/keichi/vienna 配置好 config.toml 内容。 该主题主要包含以下内容： |- archetypes ：存放default.md，头文件格式 |- layouts ：主题模板文件 |- static ：静态资源 |- theme.
+Hugo官方主题 、Hugo官方主题GitHub
+从官网上选好了一个主题如：https://themes.gohugo.io/vienna/, 根据指引进行安装，cd到 themes 目录下： git clone https://github.
   </div>
   
   <footer>
@@ -151,7 +139,7 @@ Hugo官方主题：https://themes.gohugo.io/ Hugo官方主题GitHub：https://gi
   </main>
   <footer class="container global-footer">
     <div class="copyright-note pull-left">
-      &copy; Copyright by bingyu
+      &copy; Copyright 2018 by bingyu 
     </div>
     <div class="sns-links hidden-print">
   
@@ -160,59 +148,19 @@ Hugo官方主题：https://themes.gohugo.io/ Hugo官方主题GitHub：https://gi
   </a>
   
   
-  <a href="https://twitter.com/Your%20Twitter%20username" target="_blank">
-    <i class="fa fa-twitter"></i>
-  </a>
   
   
-  <a href="https://instagram.com/Your%20Instagram%20username" target="_blank">
-    <i class="fa fa-instagram"></i>
-  </a>
   
   
-  <a href="https://plus.google.com/+Your%20Google&#43;%20user%20id" target="_blank">
-    <i class="fa fa-google"></i>
-  </a>
-  
-  
-  <a href="https://facebook.com/Your%20Facebook%20username" target="_blank">
-    <i class="fa fa-facebook"></i>
-  </a>
-  
-  
-  <a href="https://github.com/Your%20GitHub%20username" target="_blank">
+  <a href="https://github.com/bingyupj" target="_blank">
     <i class="fa fa-github"></i>
   </a>
   
   
-  <a href="https://gitlab.com/Your%20GitLab%20username" target="_blank">
-    <i class="fa fa-gitlab"></i>
-  </a>
   
   
-  <a href="https://reddit.com/user/Your%20Reddit%20username" target="_blank">
-    <i class="fa fa-reddit-alien"></i>
-  </a>
   
   
-  <a href="https://news.ycombinator.com/user?id=Your%20Hacker%20News%20username" target="_blank">
-    <i class="fa fa-hacker-news"></i>
-  </a>
-  
-  
-  <a href="https://stackoverflow.com/users/Your%20Stackoverflow%20user%20id%20%28number%29" target="_blank">
-    <i class="fa fa-stack-overflow"></i>
-  </a>
-  
-  
-  <a href="https://linkedin.com/in/Your%20LinkedIn%20username" target="_blank">
-    <i class="fa fa-linkedin"></i>
-  </a>
-  
-  
-  <a href="https://keybase.io/Your%20keybase.io%20username" target="_blank">
-    <i class="fa fa-key"></i>
-  </a>
   
 </div>
 
@@ -223,19 +171,6 @@ Hugo官方主题：https://themes.gohugo.io/ Hugo官方主题GitHub：https://gi
     hljs.initHighlightingOnLoad();
   </script>
   
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'Your Google Analytics tracking id', 'auto');
-    ga('send', 'pageview');
-  </script>
-  
-  
-  <script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
-  for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
-  mixpanel.init("Your Mixpanel API key");</script>
   
 </body>
 </html>
